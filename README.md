@@ -1,0 +1,3 @@
+本项目# springboot2
+是基于springboot和Mybatisplus开发的后端管理系统
+开发的vue+前后端分离项目，使用JWT进行密钥认证
