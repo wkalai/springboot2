@@ -1,0 +1,38 @@
+
+# 应用服务 WEB 访问端口
+server:
+ port: 8082
+#下面这些内容是为了让MyBatis映射
+#指定Mybatis的Mapper文件
+mybatis:
+ mapper-locations: classpath:mapper/*.xml
+# configuration:
+#  log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+mybatis-plus:
+ configuration:
+  log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+##指定Mybatis的实体目录
+#
+#  type-aliases-package=com.example.springboot3.mybatis.entity
+
+spring:
+
+ mvc:
+  pathmatch:
+   matching-strategy: ant_path_matcher
+
+
+ datasource:
+  driverClassName: com.mysql.cj.jdbc.Driver
+  url: jdbc:mysql://localhost/qing?serverTimezone=GMT%2b8
+  username: root
+  password: "``````"
+
+files:
+ upload:
+   path: D:/idea project/files/
+
+
+
+
